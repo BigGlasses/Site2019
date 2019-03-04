@@ -1,0 +1,93 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .is-mobile .mat-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+
+  .mat-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+  .mat-sidenav-content{
+  }
+  
+  .is-mobile .mat-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  
+.mat-sidenav{
+    padding: 10px;
+}   
+
+.project-image{
+    max-height: 500px;
+    padding: 5px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    box-shadow: 5px black;
+    margin : auto;
+    width: 100%
+}
+
+.project-image-gallery {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mat-card-actions a {
+    margin-right: 8px;
+    color: white;
+    font-size: 24px;
+}
+
+.mat-card{
+    padding: 2em;
+}
+
+.empty-space{
+    flex: 1 1 auto;
+}
+
+.projectYearDiv{
+    margin-bottom: 5cm;
+    padding: 10px;
+    background: #222222;
+}
+.projectYearDiv h1{
+    font-size: 64px;
+    text-align: center;
+}
+
+.mat-sidenav-container {
+    background-image: url("/assets/bg/bg.png");
+}
+
+.project {
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+}
+
+.pcproject {  
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.whoami{
+    font-size: 64px;
+}

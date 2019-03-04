@@ -1,0 +1,82 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="landing-container" [class.is-mobile]="mobileQuery.matches">
+    <mat-toolbar color="primary" class="example-toolbar">
+        <span>
+            <button mat-icon-button (click)="snav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </span>
+        <span class="empty-space">
+            <h1 style="text-align: center"> Brandon Roberts </h1>
+        </span>
+        <span>
+            <a style="text-align: right" mat-button href="assets/Brandon Roberts Resume.pdf"> Resume </a>
+        </span>
+    </mat-toolbar>
+
+    <mat-sidenav-container [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+
+        <mat-sidenav #snav class="leftCol" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+            fixedTopGap="56">
+            <h2>Projects</h2>
+            <mat-list *ngFor="let projectYear of projectsByYear">
+                {{projectYear.year}}
+                <mat-list-item *ngFor="let project of projectYear.projects">
+                    <!-- <a [href]="'#'+project.projectCodeName"> -->
+
+                    <button mat-button (click)="goTo(project.projectCodeName)">{{project.projectName}}</button>
+                </mat-list-item>
+            </mat-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <ng-container *ngFor="let projectYear of projectsByYear">
+                <div class="projectYearDiv">
+                    <mat-divider></mat-divider>
+                    <h1 class="projectyear"> {{projectYear.year}} Projects </h1>
+                    <ng-container *ngFor="let project of projectYear.projects">
+                        <div class="project" [class]="mobileQuery.matches ? 'project' : 'pcproject'"  [id]="project.projectCodeName">
+                            <mat-card-header>
+                                <h2>{{project.projectName}}</h2>
+                                <p style="color: grey">{{project.projectFlavour + " " + project.startYear + " - " + project.endYear}}</p>
+                            </mat-card-header>
+                            <mat-chip-list style="text-align: center;">
+                                <mat-chip *ngFor="let item of project.stack">{{item}}</mat-chip>
+                            </mat-chip-list>
+                            <div class="project-image-gallery">
+                                <mdb-carousel class="carousel slide" [interval]="'0'" [animation]="'slide'">
+                                    <ng-container>
+                                        <mdb-carousel-item *ngFor="let imgSrc of project.imageSources">
+                                            <div class="view w-100">
+                                                <img class="d-block project-image align-center" [src]="imgSrc" alt="First slide">
+                                                <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                                            </div>
+                                        </mdb-carousel-item>
+                                    </ng-container>
+                                </mdb-carousel>
+
+                            </div>
+                            <mat-card-content>
+                                <p>
+                                    {{project.description}}
+                                </p>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <a *ngIf="project.repoLink" mat-button color="primary" [href]="project.repoLink" target="_blank">
+                                    <mat-icon fontSet="fab" fontIcon="fa-github"></mat-icon>
+                                </a>
+                                <a *ngIf="project.websiteLink" mat-button color="primary" [href]="project.websiteLink" target="_blank"> WEB </a>
+                                <a *ngIf="project.infoLink" mat-button color="primary" [href]="project.infoLink" target="_blank">
+                                    <mat-icon fontSet="fa" fontIcon="fa-info"></mat-icon>
+                                </a>
+                            </mat-card-actions>
+
+                        </div>
+                        <mat-divider></mat-divider>
+                    </ng-container>
+                </div>
+            </ng-container>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+
+<router-outlet></router-outlet>

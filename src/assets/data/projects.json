@@ -1,0 +1,179 @@
+[
+    {
+        "projectName" : "Chocolate Conquest (Unity)",
+        "projectFlavour" : "An RPG in Unity.",
+        "repoLink" : "",
+        "infoLink" :"",
+        "startYear" : 2018,
+        "endYear" : 2019,
+
+        "projectCodeName" : "ccunity",
+        "imageCount" : 1,
+        "stack": ["Unity", "C#"],
+        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented UDP sockets to allow multiplayer. Created using Python and OpenGL."
+    },
+    {
+        "projectName" : "Chocolate Conquest",
+        "projectFlavour" : "An RPG.",
+        "repoLink" : "",
+        "infoLink" :"https://www.kickstarter.com/projects/1672086733/chocolate-conquest-a-world-of-chocolate?ref=341330&token=7c2147a7",
+        "startYear" : 2017,
+        "endYear" : 2018,
+        "websiteLink" : "https://bigglasses.github.io/softsnowsite/",
+        "projectCodeName" : "cc",
+        "imageCount" : 6,
+        "stack": ["Python", "OpenGL", "C"],
+        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented UDP sockets to allow multiplayer. Created using Python and OpenGL."
+    },
+    {
+        "projectName" : "Network Board Game",
+        "projectFlavour" : "An boardgame.",
+        "repoLink" : "",
+        "infoLink" :"",
+        "startYear" : 2016,
+        "endYear" : 2017,
+
+        "projectCodeName" : "networkgame",
+        "imageCount" : 12,
+        "stack": ["Python", "TCP"],
+        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented TCP sockets to allow multiplayer. Created using Python and OpenGL."
+    },
+    {
+        "projectName" : "Accel Skies",
+        "projectFlavour" : "An Disgaea fan game.",
+        "projectCodeName" : "accelskies",
+        "imageCount" : 9,
+        "startYear" : 2015,
+        "endYear" : 2016,
+        "stack": ["Python"],
+        "description" : "Another Disgaea themed game. You have to survive in a map with random objectives, and are given random items to help you complete the objectives. Created for the 2015 EPIC Game Challenge of McMaster University, it came out very well. I am proud of the game's efficient use of polymorphism. Different characters play very differently, and even enemies are very varied in attack patterns. The item and achievement system is inspired by the systems in another game, Risk of Rain. Players will unlock items by completing performance bases achievements. The items themselves can wildly alter playstyles, adding flavour to the gameplay."
+    },
+    {
+        "projectName" : "Magic Hotel",
+        "projectFlavour" : "A weird hotel sim.",
+        "projectCodeName" : "magichotel",
+        "imageCount" : 8,
+        "startYear" : 2014,
+        "endYear" : 2014,
+        "stack": ["Python"],
+        "description" : "A game I made to experiment with polymorphism. It is inspired by pokemon, so you basically battle monsters while managing a hotel. There are a variety of battle moves, abilities and mechanics that make battles challenging. I am not happy with the graphics, but I am happy with the stack system that controls the flow of battle. This one is unfinished because it was purely experimentation with classes, to the point where many sprites were taken from another one of my unfinished games."
+    },
+    {
+        "projectName" : "Rainbow Race",
+        "projectFlavour" : "A racing game?",
+        "projectCodeName" : "rainbow",
+        "imageCount" : 9,
+        "startYear" : 2014,
+        "endYear" : 2014,
+        "stack": ["Python"],
+        "description" : "An MLP themed racing game I made in Grade 11 for a graded game contest. I am pretty proud of how this one turned out because it was the first program I ever made. The code is a nightmare, of course; at the time I had no idea what a class was, so there is a ton of repitition and clutter."
+    },
+    {
+        "projectName" : "Van Quest",
+        "projectFlavour" : "A multiplayer wagon game.",
+        "projectCodeName" : "vanquest",
+        "imageCount" : 9,
+        "repoLink" : "https://github.com/BigGlasses/UnsuspisciousVan",
+        "startYear" : 2014,
+        "endYear" : 2015,
+        "stack": ["Python", "TCP"],
+        "description" : "A simple application that makes API calls based on inputed usernames. It draws stats from the server, and ranks players against each other. Makes API calls for game information using Java. Created using Android Studio. Extremely buggy, didn't understand what bandwidth was when I made it in my last year of Highschool."
+    },
+    {
+        "projectName" : "LoL Compare Stats",
+        "projectFlavour" : "An RPG",
+        "projectCodeName" : "lolcompare",
+        "imageCount" : 3,
+        "startYear" : 2015,
+        "endYear" : 2015,
+        "stack": ["Android", "Java"],
+        "description" : "Another Disgaea themed game. You have to survive in a map with random objectives, and are given random items to help you complete the objectives. "
+    },
+    {
+        "projectName" : "Samepage",
+        "projectFlavour" : "A learning app POC.",
+        "projectCodeName" : "samepage",
+        "imageCount" : 4,
+        "startYear" : 2016,
+        "endYear" : 2016,
+        "stack": ["Android", "iOS", "HTML", "Ionic", "Web2py"],
+        "description" : "Solo project created for a client. Educational application that asked users questions. Stored user information into a mySQL database using API endpoints. Android/iOS application created using Ionic, HTML and Javascript. Back-end created using web2py, mySQL and Python."
+    },
+    {
+        "projectName" : "ComDS",
+        "projectFlavour" : "Internal Social Network.",
+        "projectCodeName" : "comds",
+        "imageCount" : 4,
+        "startYear" : 2015,
+        "endYear" : 2015,
+        "stack": ["Python", "JS", "ReactJS"],
+        "description" : "Worked in a team of 5 to design and develop a website for community members to plan events. Implemented website using bootstrap and ReactJS. Made responsive web pages, with support for mobile devices. Created API endpoints using Springboot, neo4j databases and Java."
+    },
+    {
+        "projectName" : "Car Finding Machine",
+        "projectFlavour" : "A machine for finding cars.",
+        "projectCodeName" : "c4m",
+        "imageCount" : 3,
+        "startYear" : 2016,
+        "endYear" : 2017,
+        "websiteLink": "https://carfinding.azurewebsites.net/",
+        "stack": ["Java", "Spring"],
+        "description" : "Designed and developed a website for car buyers to find affordable cars. Created API endpoints using Springboot. Implemented website using Bootstrap 4 and jQuery. Uses a dataset of over 60k cars, and quickly finds the best cars for the user. Works on mobile devices. Most of the data is outdated/random at this point, but it was fun to learn/implement." 
+    },
+    {
+        "projectName" : "VanWyn",
+        "projectFlavour" : "A website for a company.",
+        "projectCodeName" : "vanwyn",
+        "imageCount" : 2,
+        "startYear" : 2017,
+        "endYear" : 2017,
+        "stack": ["JS", "HTML"],
+        "description" :  "Designed and developed a website for as a consultant for a startup company in Hamilton. Implemented googlemaps-js for a map simulation and java spring server backend for complex math calculations. Also implemented a login and administration system with java spring and mySQL database to allow client to protect certain content/pages."
+    },
+    {
+        "projectName" : "RideThruLife",
+        "projectFlavour" : "A game where you can ride a grill.",
+        "projectCodeName" : "ridethru",
+        "imageCount" : 3,
+        "repoLink" : "https://github.com/BigGlasses/RideThruLife",
+        "startYear" : 2018,
+        "endYear" : 2018,
+        "stack": ["C++", "OpenGL"],
+        "description" :  "A game where you ride anything. Created as a part of an opengl crash course. It ended up being very buggy as the course was focused on opengl 1 whereas this game was implemented using openGL 3+. There was a ton of self-study was involved but it came out pretty playable. Created in a team of 4."
+    },
+    {
+        "projectName" : "RestAssured",
+        "projectFlavour" : "An boring testing suite.",
+        "projectCodeName" : "restass",
+        "imageCount" : 3,
+        "startYear" : 2018,
+        "endYear" : 2018,
+        "websiteLink": "/assets/sites/rest/",
+        "repoLink": "https://github.com/BigGlasses/restassured",
+        "stack": ["JS", "HTML", "ReactJS"],
+        "description" :  "A small website used to model the functionality popular tool 'Postman' which is used to test Rest servers among other things. Created in a team of 3."
+    },
+    {
+        "projectName" : "FoodOrderSite",
+        "projectFlavour" : "An site where you pretend to order food.",
+        "projectCodeName" : "food",
+        "imageCount" : 6,
+        "startYear" : 2018,
+        "endYear" : 2018,
+        "websiteLink": "https://bigglasses.github.io/FoodOrderSite/",
+        "repoLink" : "https://github.com/BigGlasses/FoodOrderSite",
+        "stack": ["TypeScript", "Angular", "NodeJS"],
+        "description" :  "A minimal website meant to copy the UI of popular food ordering applications, such as UberEats, DoorDash or GrubHub. It mimics functionality, but uses static data. Made to learn how to use Angular and NodeJS. Created alone for fun."
+    },
+    {
+        "projectName" : "SoftSnow Website",
+        "projectFlavour" : "A promotional website.",
+        "projectCodeName" : "softsnow",
+        "imageCount" : 1,
+        "startYear" : 2017,
+        "endYear" : 2018,
+        "websiteLink": "https://bigglasses.github.io/softsnowsite//",
+        "stack": ["JS", "Angular"],
+        "description" :  "A website designed for my small games company, Softsnow Studios LTD. It featured promotional material for a game I was attempting to fund the development of through Kickstarter. The website now serves as a time of the game I wanted to create."
+    }
+]
