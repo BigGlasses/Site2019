@@ -71,7 +71,20 @@
     padding: 10px;
     background: #222222;
 }
+.pcprojectYearDiv{
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+    padding: 30px;
+    background: #222222;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 .projectYearDiv h1{
+    font-size: 64px;
+    text-align: center;
+}
+
+.pcprojectYearDiv h1{
     font-size: 64px;
     text-align: center;
 }
@@ -85,11 +98,8 @@
     padding-top: 1cm;
 }
 
-.pcproject {  
-    padding-bottom: 1cm;
-    padding-top: 1cm;
-    padding-left: 25%;
-    padding-right: 25%;
+.mat-card-content>p{  
+    text-align: justify;
 }
 
 .whoami{
@@ -101,4 +111,10 @@
     vertical-align: center;
     font-size: 24px;
     margin-right: 10px;
+}
+
+.pcdescription {
+    width: 60%; 
+    margin-left:20%; 
+    margin-top: 20px;
 }

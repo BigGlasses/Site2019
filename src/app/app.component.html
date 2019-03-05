@@ -37,7 +37,7 @@
             </mat-list>
         </mat-sidenav>
         <mat-sidenav-content>
-                <div class="projectYearDiv" style="margin-top: 0;" [class]="mobileQuery.matches ? 'projectYearDiv project' : 'projectYearDiv pcproject'">
+                <div  [class]="mobileQuery.matches ? 'projectYearDiv' : 'pcprojectYearDiv'" style="margin-top: 0;">
                     <h1> Development Corner </h1>
                     <h3>  Who am I? </h3>
                     <p style="color: grey"> A passionate coder who enjoys learning new ways to code and making games. </p>
@@ -49,17 +49,17 @@
                     <a style="text-align: right" mat-button href="assets/Brandon Roberts Resume.pdf"> You can view my resume by clicking here. </a>
                     </div>
             <ng-container *ngFor="let projectYear of projectsByYear">
-                <div class="projectYearDiv">
+                <div [class]="mobileQuery.matches ? 'projectYearDiv' : 'pcprojectYearDiv'">
                     <mat-divider></mat-divider>
                     <h1 class="projectyear"> {{projectYear.year}} Projects </h1>
                     <ng-container *ngFor="let project of projectYear.projects">
-                        <div class="project" [class]="mobileQuery.matches ? 'project' : 'pcproject'"  [id]="project.projectCodeName">
+                        <div class="project"   [id]="project.projectCodeName">
                             <mat-card-header>
                                 <h2>{{project.projectName}}</h2>
                                 <p style="color: grey">{{project.projectFlavour + " " + project.startYear + " - " + project.endYear}}</p>
                             </mat-card-header>
-                            <mat-chip-list style="text-align: center;">
-                                <mat-chip *ngFor="let item of project.stack">{{item}}</mat-chip>
+                            <mat-chip-list  style="text-align: center;">
+                                <mat-chip color="accent" selected *ngFor="let item of project.stack">{{item}}</mat-chip>
                             </mat-chip-list>
                             <div class="project-image-gallery">
                                 <mdb-carousel class="carousel slide project-image-gallery" [interval]="'5000'" [animation]="'slide'">
@@ -75,9 +75,12 @@
 
                             </div>
                             <mat-card-content>
-                                <p>
-                                    {{project.description}}
-                                </p>
+                                <div [class.pcdescription]="!mobileQuery.matches"> 
+
+                                        <p style= " text-align: justify">
+                                                {{project.description}}
+                                        </p>
+                                </div>
                             </mat-card-content>
                             <mat-card-actions>
                                 <a *ngIf="project.repoLink" mat-button color="primary" [href]="project.repoLink" target="_blank">
