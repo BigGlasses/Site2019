@@ -10,13 +10,13 @@
             <h1 style="text-align: center"> Brandon Roberts </h1>
         </span>
         <span>
-            <a mat-button color="primary" href="https://github.com/BigGlasses" target="_blank">
+            <a  color="primary" href="https://github.com/BigGlasses" target="_blank">
                 <mat-icon fontSet="fab" fontIcon="fa-github"></mat-icon>
             </a>
-            <a mat-button color="primary" href="https://www.linkedin.com/in/brandonnickroberts/" target="_blank">
+            <a color="primary" href="https://www.linkedin.com/in/brandonnickroberts/" target="_blank">
                 <mat-icon fontSet="fab" fontIcon="fa-linkedin"></mat-icon>
             </a>
-            <a mat-button color="primary" href="https://www.hackerrank.com/TastyCereal" target="_blank">
+            <a  color="primary" href="https://www.hackerrank.com/TastyCereal" target="_blank">
                 <mat-icon fontSet="fab" fontIcon="fa-hackerrank"></mat-icon>
             </a>
         </span>
@@ -45,6 +45,8 @@
                     <p style="color: grey"> Finishing up my Software Engineering bachelor's degree, and working on as many side projects as possible before I go full-time at Microsoft. </p>
                     <h3>  What can you find here? </h3>
                     <p style="color: grey"> Many of favourite projects that I enjoyed working on! Some even have source code! </p>
+                    <h3>  Resume? </h3>
+                    <a style="text-align: right" mat-button href="assets/Brandon Roberts Resume.pdf"> You can view my resume by clicking here. </a>
                     </div>
             <ng-container *ngFor="let projectYear of projectsByYear">
                 <div class="projectYearDiv">
@@ -60,7 +62,7 @@
                                 <mat-chip *ngFor="let item of project.stack">{{item}}</mat-chip>
                             </mat-chip-list>
                             <div class="project-image-gallery">
-                                <mdb-carousel class="carousel slide project-image-gallery" [interval]="'0'" [animation]="'slide'">
+                                <mdb-carousel class="carousel slide project-image-gallery" [interval]="'5000'" [animation]="'slide'">
                                     <ng-container>
                                         <mdb-carousel-item *ngFor="let imgSrc of project.imageSources">
                                             <div class="view w-100">
@@ -92,19 +94,19 @@
                     </ng-container>
                 </div>
             </ng-container>
+            <!-- Footer -->
+            <footer class="page-footer font-small blue">
+            
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                        <a style="text-align: left" mat-button href="https://github.com/BigGlasses/Site2019"> View this site on GitHub </a>
+                        <a style="text-align: right" mat-button href="assets/Brandon Roberts Resume.pdf"> View My Resume </a>
+                </div>
+                <!-- Copyright -->
+              
+              </footer>
         </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
-<!-- Footer -->
-<footer class="page-footer font-small blue fixed-bottom">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-            <a style="text-align: left" mat-button href="https://github.com/BigGlasses/Site2019"> View this site on GitHub </a>
-            <a style="text-align: right" mat-button href="assets/Brandon Roberts Resume.pdf"> View My Resume </a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
   <!-- Footer -->
 <router-outlet></router-outlet>

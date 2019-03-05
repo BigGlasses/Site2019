@@ -8,9 +8,9 @@
         "endYear" : 2019,
 
         "projectCodeName" : "ccunity",
-        "imageCount" : 1,
+        "imageCount" : 2,
         "stack": ["Unity", "C#"],
-        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented UDP sockets to allow multiplayer. Created using Python and OpenGL."
+        "description" : "The ambitious RPG project continues. This is an implementation using Unity to achieve better performance and faster development time."
     },
     {
         "projectName" : "Chocolate Conquest",
@@ -23,7 +23,7 @@
         "projectCodeName" : "cc",
         "imageCount" : 6,
         "stack": ["Python", "OpenGL", "C"],
-        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented UDP sockets to allow multiplayer. Created using Python and OpenGL."
+        "description" : "An ambitious RPG project. This was my first time working with low-level graphics programming through openGL. I had to learn about framebuffers, shaders, and transformations in order to make this game a reality, and while it was very tricky it was also very fun. I spent a lot of time optimizing the graphics pipeline, but there was just too much overhead in Python and Pygame for the project to continue. The python version of the project was eventually shelved in order to begin a version in Unity. Created by me initially, I hired artists to help with some of the nicer looking art, and another coder helped later on for quality of life issues. Thanks Brad!"
     },
     {
         "projectName" : "Network Board Game",
@@ -36,7 +36,7 @@
         "projectCodeName" : "networkgame",
         "imageCount" : 12,
         "stack": ["Python", "TCP"],
-        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented TCP sockets to allow multiplayer. Created using Python and OpenGL."
+        "description" : "An extension of my Overlord game, with much of the code rewritten for optimization, and support for Python 3. This one features my own art, gameplay updates and a visual novel system for delivering story. It is still in development, and was originally set for release summer 2017. It was scrapped, but I liked the characters and decided to use them for a future project. Implemented TCP sockets to allow multiplayer. Created using Python."
     },
     {
         "projectName" : "Accel Skies",
