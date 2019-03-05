@@ -90,7 +90,7 @@
 }
 
 .mat-sidenav-container {
-    background-image: url("/assets/bg/bg.png");
+    background-image: url("../assets/bg/bg.png");
 }
 
 .project {
