@@ -33,18 +33,21 @@
 }   
 
 .project-image{
-    max-height: 500px;
-    padding: 5px;
-    border: 1px gray solid;
-    border-radius: 5px;
-    box-shadow: 5px black;
     margin : auto;
-    width: 100%
+
+    max-width: 100%;
+    height: 600px;
+    vertical-align: middle;
+}
+.mobile-project-image{
+    margin : auto;
+
+    max-width: 100%;
+    max-height: 200px;
+    vertical-align: middle;
 }
 
 .project-image-gallery {
-    width: 100%;
-    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -63,7 +66,8 @@
 }
 
 .projectYearDiv{
-    margin-bottom: 5cm;
+    margin-top: 3cm;
+    margin-bottom: 1cm;
     padding: 10px;
     background: #222222;
 }
@@ -90,4 +94,10 @@
 
 .whoami{
     font-size: 64px;
+}
+
+.mat-toolbar a {
+    color: white;
+    vertical-align: center;
+    font-size: 24px;
 }

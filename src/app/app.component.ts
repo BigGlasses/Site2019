@@ -12,6 +12,7 @@ export class AppComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
   title = 'Site2019';
   projectsByYear: ProjectDisplay[];
+  opened: boolean = false;
 
   constructor(private access: AccessService, changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     access.getData((value: CodeProject[]) => {
@@ -37,7 +38,7 @@ export class AppComponent implements OnDestroy {
           projects: prepare[key]
         })
       }
-      projects = projects.sort(function(a, b){return Number(b.year) - Number(a.year)});
+      projects = projects.sort(function (a, b) { return Number(b.year) - Number(a.year) });
       this.projectsByYear = projects;
     });
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
@@ -50,9 +51,17 @@ export class AppComponent implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
+  scrollTimeout: any = null;
 
   goTo(element): void {
+    var self = this;
     document.getElementById(element).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    addEventListener('scroll', function (e) {
+      clearTimeout(self.scrollTimeout);
+      self.scrollTimeout = setTimeout(function () {
+        self.opened = false;
+      }, 50);
+    });
   }
 
 }
